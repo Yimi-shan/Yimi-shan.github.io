@@ -175,7 +175,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Accueil
+            Home
           </a>
         </li>
       
@@ -251,7 +251,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Posté le</span>
+            <span class="post-meta-item-text">Posted on</span>
             <time itemprop="dateCreated" datetime="2016-06-15T11:20:09+08:00" content="2016-06-15">
               2016-06-15
             </time>
@@ -300,38 +300,12 @@
 
       
         
-          
-            <p>在一开始学习响应式布局的时候，我就觉得响应式布局是一个很麻烦的东西。可是我没有想到会这么麻烦…</p>
-<p>在我做第一个响应式布局的时候，我那个时候是直接用css写的，我觉得我应该让我的代码优化一些，然后我就看着主页的三个尺寸，就开始研究。</p>
-<p>研究到一定的结果之后，我就开始动手制作首页，那个时候对百分比，rem，em等都不熟悉，制作的时候没掌握好。然后，我就东改改西改改，一部分运用百分比，一部分运用media改变px，就这样把首页给马马虎虎的完成了。</p>
-<p>虽然代码有点乱，但还是完成了。</p>
-<p>正当开心的想开始研究下一页的时候，我就傻了…</p>
-<p>我发现两个页面有很多一样的地方，然而在做主页的时候，我都好仔细的把每个class的父级写出来，所以，现在我就傻了。我现在的代码根本就不能重用。</p>
-<p>再把其它页面翻完，我发现他们居然相似度极高，可是，我在研究首页的时候，却只考虑到首页个个尺寸之间的比例，木有考虑页面与页面之间的关系。这是一个大失误。</p>
-<p>于是，我开始研究他们之间相同的地方。接着我就开始把这些相同的地方给整合起来，然后再去修改我的主页面，把他们之间相同的类给提取出来，作为公共类。</p>
-<p>经过一番修改，我又一次把我的主页面修改完成了，可是，我的css代码却变得更加乱了…</p>
-<p>这时候，我没有去管理我那混乱的代码，而是继续写后面的页面。</p>
-<p>根据后面的页面，这次，我懂得把相同的地方给提取出来，把主要的结构给做出来，再来改细节。</p>
-<p>我把整个网站完善之后，在测试的时候，就会发现其中的一些问题，结果表明，我还没没有仔细的想好，就动手了，有的需要用百分比的地方，我却用了固定值，只在media里面修改其值的变化，在media没有设定的中间部分，有的地方会产生一些问题。设置在屏幕的下面会出现滚动条。</p>
-<p>慢慢的修改完全部的代码之后，我发现我的代码已经非常混乱了，尽管我已经尽量使它们分类了…</p>
-<p>在字体方面，我使用的也是px，在几个media中分别修改它们的大小…</p>
-<p>说了这么多，其实，我就是想提醒自己，尽量不要再犯一样的错误。</p>
-<p>由于上一次的代码写的比较混乱，所以我决定重新写一遍css样式。这次我要让我的代码变得整齐，让我的代码得到优化。</p>
-<p>所以这次我选择用ccss来写，为了让我的media更加方便。</p>
-<p>这次我用来做响应式最多的是用rem和百分比，这两个都是做响应式比较方便的。</p>
-<p>每次在制作之前我都会考虑应该要，用rem或者是用百分比。</p>
-<p>css样式中，用sass的循环来对media进行计算，对HTML的font-size进行修改，方便，快捷。</p>
-<p>接下来，我来说说应该怎么去做可以更好…</p>
-<p>1.先观察各个不同尺寸的页面，它们之间的相同点和区别。</p>
-<p>2.接下来还要观察，各个页面之间的相同点。尽可能的把相同点给提取出来，作为公共类使用。这样和你可以让代码得到进一步的优化。</p>
-<p>3.尽可能的观察仔细最好用本子记录下来。这样可以方便你的查阅还有对网页的制作。在观察的阶段，不要害怕花费时间，如果你观察好了，准确了，制作的过程，就可以节省很多的代码优化的时间。也可以让你的代码更加的简洁清晰。</p>
-<p>4.在代码的制作方面，你要观察你的这个地方是需要用百分比比较好呢还是用rem或者用em来设计还是用固定值比较好。</p>
-<p>一般情况下，随着屏幕的大小的变化而变化的使用百分比是比较好的。</p>
-<p>在media相同的情况下，各个部分修改的比例是一样的，这种情况就适合用rem。</p>
-<p>字体的话可以用循环来改变，同样的需要使用rem才能方便的统一修改。</p>
-<p>注意：所有设置rem的地方都要统一考量它们的比例。</p>
-
-          
+          在一开始学习响应式布局的时候，我就觉得响应式布局是一个很麻烦的东西。可是我没有想到会这么麻烦…
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/06/15/Responsive-Layout/">
+              Read more &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -392,7 +366,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Posté le</span>
+            <span class="post-meta-item-text">Posted on</span>
             <time itemprop="dateCreated" datetime="2016-06-15T08:49:28+08:00" content="2016-06-15">
               2016-06-15
             </time>
@@ -485,7 +459,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Posté le</span>
+            <span class="post-meta-item-text">Posted on</span>
             <time itemprop="dateCreated" datetime="2016-06-13T20:15:45+08:00" content="2016-06-13">
               2016-06-13
             </time>
@@ -595,7 +569,7 @@
           <div class="site-state-item site-state-posts">
             <a href="/archives">
               <span class="site-state-item-count">3</span>
-              <span class="site-state-item-name">articles</span>
+              <span class="site-state-item-name">posts</span>
             </a>
           </div>
 
@@ -660,7 +634,7 @@
 </div>
 
 <div class="theme-info">
-  Thème -
+  Theme -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
     NexT.Muse
   </a>
