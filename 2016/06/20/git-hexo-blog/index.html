@@ -100,7 +100,7 @@ git
 git
 申请git账号，并登录。
 点击New">
-<meta property="og:updated_time" content="2016-06-20T11:52:16.000Z">
+<meta property="og:updated_time" content="2016-06-22T01:23:05.563Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="github+hexo搭建个人博客">
 <meta name="twitter:description" content="前言想利用git搭建博客，但是对于网上高级的博客的搭建方法和专业术语不太懂的小白白请看过来。这里我将用直白的语言来说明博客搭建的方法，和过程。看看我的博客
@@ -348,11 +348,11 @@ git
 <p>注意：一个账号只能创建一个博客。</p>
 <h3 id="配置-Git-和-SSH-密钥连接"><a href="#配置-Git-和-SSH-密钥连接" class="headerlink" title="配置 Git 和 SSH 密钥连接"></a>配置 Git 和 SSH 密钥连接</h3><ol>
 <li>在Windows下找到Git，打开GitBash。</li>
-<li>“”里面输入Git的名称<br><code>git config –global user.name “Yimi-shan”</code></li>
-<li>“”里面输入你Git的邮箱<br><code>git config –global user.email “yimi@qq.com”</code></li>
-<li>查看git配置<br><code>git config –lis</code></li>
-<li>查看是否已经有了ssh密钥<br><code>cd ~/.ssh</code><br>如果返回 “No such file or directory” 继续下一步，否则说明你已经有一个密匙对，转到 Step 3.</li>
-<li><p>生成新的SSH密钥(“”里面输入你的邮箱)</p>
+<li>“”里面输入Git的名称 (注意global前面有两“-”，用户名的引号是英文的引号)<br><code>git config --global user.name “Yimi-shan”</code></li>
+<li>“”里面输入你Git的邮箱 (注意global前面有两“-”，邮箱的引号是英文的引号)<br><code>git config --global user.email “yimi@qq.com”</code></li>
+<li>查看git配置 (注意lis前面有两“-”)<br><code>git config --lis</code></li>
+<li>查看是否已经有了ssh密钥<br><code>cd ~/.ssh</code><br>如果返回 “No such file or directory” 继续下一步，否则说明你已经有一个密匙对，转到 7</li>
+<li><p>生成新的SSH密钥 (“”里面输入你的邮箱，邮箱的引号是英文的引号)</p>
 <blockquote>
 <ul>
 <li><code>ssh-keygen -t rsa -C “yimi@qq.com”</code></li>
@@ -364,7 +364,7 @@ git
 </ul>
 </blockquote>
 </li>
-<li><p>复制秘钥<br>点击计算机&gt;&gt;&gt;c盘&gt;&gt;&gt;Users&gt;&gt;&gt;Administrator&gt;&gt;&gt;.ssh&gt;&gt;&gt;id_rsa.pub<br>复制里面的内容。</p>
+<li><p>复制秘钥<br>点击计算机&gt;&gt;&gt;c盘&gt;&gt;&gt;Users&gt;&gt;&gt;Administrator&gt;&gt;&gt;.ssh&gt;&gt;&gt;id_rsa.pub<br>复制里面的内容。<br>如果你的.ssh目录下面没有文件，则可以把.ssh删除，然后继续第6步.</p>
 </li>
 <li><p>在<a href="https://github.com/" target="_blank" rel="external">git</a>官网中，登录你的git账号&gt;&gt;&gt;点击你的git头像，在下拉框中选择settings&gt;&gt;&gt;SSH and GPG keys&gt;&gt;&gt;New SSH key&gt;&gt;&gt;接着在key中粘贴你刚刚复制的秘钥&gt;&gt;&gt;And SSH key</p>
 </li>
